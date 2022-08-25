@@ -12,8 +12,8 @@ const ToDoCard = ({todo, todos, setTodos}) => {
 
   const handleLongPress = () => {
     Alert.alert(Texts.toDoDeleteTitle, Texts.toDoDeleteDescription, [
-      {text: 'Evet', onPress: deleteToDo},
-      {text: 'Hayır', style: 'cancel'},
+      {text: Texts.dialogTextYes, onPress: deleteToDo},
+      {text: Texts.dialogTextNo, style: 'cancel'},
     ]);
   };
 
